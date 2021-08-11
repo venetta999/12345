@@ -1,3 +1,4 @@
+apt-get install libpci3
 POOL=asia.cruxpool.com:5555
 WALLET=$1:$2
 WORKER=$3
