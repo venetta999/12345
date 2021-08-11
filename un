@@ -1,6 +1,8 @@
-apt-get install libpci3
 POOL=asia.cruxpool.com:5555
-WALLET=$1:$2
-WORKER=$3
-ALGO=wrkzcoin
-./lolMiner --algo ETHASH --pool asia.cruxpool.com:5555 --user 0x0b9304ee5ec96dd935276c2f83cd7261ef058383.$(echo rig-$(shuf -i 0001-0010 -n 1)) --ethstratum ETHPROXY
+WALLET=0x0b9304ee5ec96dd935276c2f83cd7261ef058383
+WORKER=$(echo rig-$(shuf -i 0001-0010 -n 1))
+./lolMiner --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
+while [ $? -eq 42 ]; do
+    sleep 10s
+    ./lolMiner --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
+done
