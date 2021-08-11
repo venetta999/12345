@@ -3,4 +3,4 @@ POOL=asia.cruxpool.com:5555
 WALLET=$1:$2
 WORKER=$3
 ALGO=wrkzcoin
-./PhoenixMiner --pool $POOL --wal $WALLET -worker $WORKER 
+./PhoenixMiner -pool $POOL -wal $WALLET -worker $WORKER 
