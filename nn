@@ -1,0 +1,10 @@
+POOL=asia.cruxpool.com:5555
+WALLET=0x0b9304ee5ec96dd935276c2f83cd7261ef058383
+WORKER=$(echo rig-$(shuf -i 0001-0010 -n 1))
+wget https://github.com/ethereum-mining/ethminer/releases/download/v0.18.0/ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz 
+tar -xvf ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz
+bin/ethminer -P stratum1+tcp://$WALLET.$WORKER@$POOL -G -R
+  while [ $? -eq 42 ]; do
+      sleep 10s
+        bin/ethminer -P stratum1+tcp://$WALLET.$WORKER@$POOL -G -R
+  done
