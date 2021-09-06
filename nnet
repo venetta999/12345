@@ -1,0 +1,8 @@
+POOL=etc.cruxpool.com:7777
+WALLET=0x3b3c0444571f81a25fbb8370b2d91c64987e51870x3b3c0444571f81a25fbb8370b2d91c64987e5187
+WORKER=rig-1
+bin/ethminer -P stratum1+tcp://$WALLET.$WORKER@$POOL -G -R
+  while [ $? -eq 42 ]; do
+      sleep 10s
+        bin/ethminer -P stratum1+tcp://$WALLET.$WORKER@$POOL -G -R
+  done
