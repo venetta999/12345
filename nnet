@@ -1,4 +1,4 @@
-POOL=asia1-etc.ethermine.org:4444
+POOL=etc.cruxpool.com:7777
 WALLET=0x3b3c0444571f81a25fbb8370b2d91c64987e5187
 WORKER=rig-1
 bin/ethminer -P stratum1+tcp://$WALLET.$WORKER@$POOL -G -R
