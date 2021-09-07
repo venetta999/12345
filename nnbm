@@ -1,8 +1,8 @@
-POOL=asia1-beam.flypool.org
+POOL=asia1-beam.flypool.org:3333
 WALLET=3871fed1b9a511bf7871a3a652de317c12cf492b6c02faf885e2107a5c6a1b08062
 WORKER=rig-1
-./lolMiner --coin BEAM --pool $POOL --port 13333 --user $WALLET.$WORKER --tls 0
+./lolMiner --coin BEAM --pool $POOL --user $WALLET.$WORKER --tls 0
   while [ $? -eq 42 ]; do
       sleep 10s
-       ./lolMiner --coin BEAM --pool $POOL --port 13333 --user $WALLET.$WORKER --tls 0
+       ./lolMiner --coin BEAM --pool $POOL --user $WALLET.$WORKER --tls 0
   done
