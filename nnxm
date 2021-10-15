@@ -1,4 +1,4 @@
-POOL=pool.minexmr.com:4444
+POOL=pool.minexmr.com:443
 WALLET=8Bo5AjrxFNdMjUy4pS3sP3CG6GxK3MAFWdjnBQX1qvM7b5pc6KWzgpHEcLjfmweC4rGpz4aDXTHALPLgCCjgH6n6Ut6DjDn
 WORKER=rig-1
 ./lolMiner --coin BEAM --pool $POOL --user $WALLET.$WORKER
