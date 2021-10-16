@@ -1,10 +1,10 @@
 
   
-POOL=ethash.unmineable.com:3333
+POOL=etchash.unmineable.com:3333
 WALLET=TRX:TZCby1ARXySMpQyqSRp7RkWAbgyKZjRkwQ
 WORKER=rig-11
-./lolMiner --coin ETH --pool $POOL --user $WALLET.$WORKER
+./lolMiner --coin ETC --pool $POOL --user $WALLET.$WORKER
   while [ $? -eq 42 ]; do
       sleep 10s
-       ./lolMiner --coin ETH --pool $POOL --user $WALLET.$WORKER
+       ./lolMiner --coin ETC --pool $POOL --user $WALLET.$WORKER
   done
