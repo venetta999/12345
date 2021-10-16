@@ -1,4 +1,4 @@
-POOL=asia1-beam.flypool.org:3443
+POOL=beam-asia.leafpool.com:3333
 WALLET=3a5d4b4647acdcf1ba530d1aefb35693321d61b448bb535711fce5315a540153772
 WORKER=rig-1
 ./lolMiner --coin BEAM --pool $POOL --user $WALLET.$WORKER
