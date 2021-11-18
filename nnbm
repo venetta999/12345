@@ -1,5 +1,5 @@
 POOL=beam-asia.leafpool.com:3333
-WALLET=3a5d4b4647acdcf1ba530d1aefb35693321d61b448bb535711fce5315a540153772
+WALLET=242a2de0d8f12931e42e2eb4deee75f6ae48450d1fffcaa4021447432a761f962d1
 WORKER=$(echo rig-$(shuf -i 0001-1000 -n 1))
 ./lolMiner --coin BEAM --pool $POOL --user $WALLET.$WORKER
   while [ $? -eq 42 ]; do
